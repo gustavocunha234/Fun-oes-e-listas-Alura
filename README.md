@@ -72,16 +72,3 @@ Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, fee
 ---
 
 **"O aprendizado é um processo constante. Continue explorando e crescendo!"**
-
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/Fun-oes-e-listas-Alura/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/Fun-oes-e-listas-Alura/github-contribution-grid-snake.svg">
-  <img alt="Snake" src="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/Fun-oes-e-listas-Alura/github-contribution-grid-snake.svg">
-</picture>
-
-
-
-
-
-
