@@ -74,7 +74,11 @@ Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, fee
 **"O aprendizado é um processo constante. Continue explorando e crescendo!"**
 
 
-![Snake animation](https://github.com/gustavocunha234/gustavocunha234/blob/output/github-contribution-grid-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/output/github-contribution-grid-snake.svg">
+</picture>
 
 
 
