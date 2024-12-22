@@ -72,3 +72,11 @@ Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, fee
 ---
 
 **"O aprendizado é um processo constante. Continue explorando e crescendo!"**
+
+
+![Snake animation](https://github.com/gustavocunha234/gustavocunha234/blob/output/github-contribution-grid-snake.svg)
+
+
+
+
+
