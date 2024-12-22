@@ -40,7 +40,7 @@ Aqui estão organizados os arquivos e códigos desenvolvidos durante o curso:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/gustavocunha234/Fun-oes-e-listas-Alura.git
    ```
 
 2. Navegue até o diretório desejado e explore os códigos.
@@ -48,7 +48,7 @@ Aqui estão organizados os arquivos e códigos desenvolvidos durante o curso:
 3. Execute os exemplos em seu navegador ou usando o Node.js:
 
    ```bash
-   node exemplos/funcoes.js
+   node exemplos/app.js
    ```
 
 ## Aprendizados
@@ -75,9 +75,9 @@ Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, fee
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/main/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/main/github-contribution-grid-snake.svg">
-  <img alt="Snake" src="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/main/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/Fun-oes-e-listas-Alura/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/Fun-oes-e-listas-Alura/github-contribution-grid-snake.svg">
+  <img alt="Snake" src="https://raw.githubusercontent.com/gustavocunha234/gustavocunha234/Fun-oes-e-listas-Alura/github-contribution-grid-snake.svg">
 </picture>
 
 
