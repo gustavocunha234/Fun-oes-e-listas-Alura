@@ -1,42 +1,76 @@
-// let titulo = document.querySelector('h1');
-// titulo.innerHTML = 'Jogo do numero secreto';
-
-// let paragrafo = document.querySelector('p');
-// paragrafo.innerHTML = 'Escolha um numero entre 1 e 10';
+let listaDeNumerosSorteados = [];
+let numeroLimite = 10;
+let numeroSecreto = gerarNumeroAleatorio();
+let tentativas = 1;
 
 function verificarChute() {
-    console.log('botao clicado')
+    let chute = document.querySelector('input').value;
+    console.log(chute == numeroSecreto);
 }
 
 function exibirTextoNaTela(tag, texto){
 let campo = document.querySelector(tag);
 campo.innerHTML = texto;
+responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2})
 }
+
+
+function exibirMensagemInicial(){
 
 exibirTextoNaTela('h1', 'Jogo do numero secreto');
 exibirTextoNaTela('p', 'Escolha um numero entre 1 e 10')
 
-// let titulo = document.querySelector('h1');
-// titulo.innerHTML = 'Hora do Desafio';
+}
 
-// function verificarChute(){
-//     console.log('botao clicado');
-// }
+exibirMensagemInicial();
 
-// function exibir(){
-//     alert('Eu amo JS');
-// }
+function verificarChute(){
+    let chute = document.querySelector('input').value;
 
-// function botao() {
-//     let cidade = prompt('Nome de uma cidade do Brasil ?');
-//     alert(`Estive em ${cidade} e lembrei de voce`);
-// }
+    if(chute == numeroSecreto){
+        exibirTextoNaTela('h1', 'Acertou');
+        let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+        let mensagemTentativas = `Voce descobriu numero secreto ${tentativas} ${palavraTentativa}`;
+        exibirTextoNaTela('p', mensagemTentativas);
+        document.getElementById('reiniciar').removeAttribute('disabled');
+    }else{
+        if(chute > numeroSecreto){
+            exibirTextoNaTela('p', 'o numero secreto ee menor');
+        }
+        else{
+            exibirTextoNaTela('p', 'o numero secreto ee maior');
+        }
+        tentativas++;
+        limparCampo();
+    }
+}
 
-// function soma(){
-//    let valor1 = parseInt(prompt('digite um numero ? '));
-//    let valor2 = parseInt(prompt('digite outro numero ? '));
-//    let resultado = valor1 + valor2;
+function gerarNumeroAleatorio(){
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
-//    alert(`A soma do ${valor1} + ${valor2} = ${resultado}`);
+    if(quantidadeDeElementosNaLista == numeroLimite){
+        listaDeNumerosSorteados = [];
+    }
 
-// }
+    if(listaDeNumerosSorteados.includes(numeroEscolhido)){
+        return gerarNumeroAleatorio();
+    }else{
+        listaDeNumerosSorteados.push(numeroEscolhido);
+        console.log(listaDeNumerosSorteados);
+        return numeroEscolhido;
+    }
+}
+
+function limparCampo(){
+    chute = document.querySelector('input');
+    chute.value = '';
+}
+
+function reiniciarJogo(){
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = 1;
+    exibirMensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disabled', true);
+}
