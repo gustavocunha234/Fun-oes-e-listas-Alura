@@ -40,7 +40,7 @@ Aqui estão organizados os arquivos e códigos desenvolvidos durante o curso:
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/gustavocunha234/Fun-oes-e-listas-Alura.git
    ```
 
 2. Navegue até o diretório desejado e explore os códigos.
@@ -48,7 +48,7 @@ Aqui estão organizados os arquivos e códigos desenvolvidos durante o curso:
 3. Execute os exemplos em seu navegador ou usando o Node.js:
 
    ```bash
-   node exemplos/funcoes.js
+   node exemplos/app.js
    ```
 
 ## Aprendizados
